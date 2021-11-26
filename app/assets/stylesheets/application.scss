@@ -11,9 +11,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 body {
   background: rgb(8, 8, 8);
+  color: white;
 }
 
 .index-content {
@@ -22,16 +25,16 @@ body {
 
 .banner {
   background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2luZW1hJTIwcG9wY29ybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
-  height: 40vh;
+  height: 64vh;
   background-size: cover;
+  backdrop-filter: blur(0.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    padding-top: 48px;
-    font-size: 400%;
+    font-size: 600%;
+    font-family:'Lobster', cursive;
   }
 }
 
@@ -52,15 +55,28 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+
 }
 
 .card {
   border-radius: 16px;
-  box-shadow: 1px, 1px, 1px, grey;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
   height: 160px;
   display: flex;
   justify-content: space-around;
   text-align: center;
   font-size: 200%;
+  background-color: black;
+  background-image: linear-gradient(grey, white);
+}
 
+a {
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
