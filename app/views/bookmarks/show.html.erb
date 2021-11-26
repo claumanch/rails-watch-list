@@ -1,9 +1,8 @@
 <%= render "shared/navbar" %>
 <div class="bookmark-view">
-  <h3>Your Bookmark</h3>
+  <h3>Your Bookmark for <em><%= @bookmark.movie.title %>:</em></h3>
   <br>
-  <p>Movie: <%= @bookmark.movie.title %></p>
-  <p>Comment: <%= @bookmark.comment %></p>
+  <p>"<%= @bookmark.comment %>"</p>
   <br><br>
   <%= link_to "Delete this bookmark", list_bookmark_path(@bookmark.list, @bookmark), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-light" %>
 </div>
