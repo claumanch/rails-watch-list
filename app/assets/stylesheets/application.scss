@@ -11,3 +11,56 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background: rgb(8, 8, 8);
+}
+
+.index-content {
+  margin: 1% 12%;
+}
+
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2luZW1hJTIwcG9wY29ybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
+  height: 40vh;
+  background-size: cover;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 48px;
+    font-size: 400%;
+  }
+}
+
+.button-main {
+  display: flex;
+  justify-content: space-around;
+
+  .new-list-btn.btn.btn-dark {
+    width: 20%;
+    border-radius: 16px;
+    opacity: 0.8;
+  }
+}
+
+.card-container {
+  padding: 0;
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 1px, 1px, 1px, grey;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 200%;
+
+}

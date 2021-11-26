@@ -1,0 +1,17 @@
+<div class="navbar">
+  <p><%= link_to "New List", new_list_path, class: "new-list-btn btn btn-light" %></p>
+</div>
+
+<div class="banner">
+  <h1>Movies</h1>
+</div>
+
+<br>
+
+<div class ="index-content">
+  <ul class="card-container">
+    <% @lists.each do |list| %>
+      <li class="card"><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+  </ul>
+</div>
