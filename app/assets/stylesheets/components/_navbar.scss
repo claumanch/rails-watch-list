@@ -1,27 +1,29 @@
-.navbar {
-  justify-content: right;
-  background: rgb(8, 8, 8);
-}
+.navbar-container {
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0;
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
 }
 
 div.navbar {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   margin: 0 5%;
-  background: rgb(8, 8, 8);
+
 
 }
 
 .navbar-logo {
-  background-image: url('../../images/logopopcorn.jpg');
-  width: max-content;
-  object-fit: cover;
+  background-image: url("https://img.freepik.com/free-vector/cup-popcorn-graphic-illustration_53876-8059.jpg?size=338&ext=jpg");
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  border-radius: 50%;
+}
 
+.navbar-navigators {
+  display: flex;
+  justify-content: right;
 }
